@@ -136,6 +136,7 @@ var getAllUsers = function (req, res) { return __awaiter(void 0, void 0, void 0,
                         allUsers.push({
                             _id: user._id,
                             name: user.name,
+                            location: user.location,
                             about: user.about,
                             tags: user.tags,
                             joinedOn: user.joinedOn,
@@ -158,6 +159,7 @@ var editUserProfile = function (req, res) { return __awaiter(void 0, void 0, voi
             case 0:
                 _a = req.body, name = _a.name, location = _a.location, tags = _a.tags, about = _a.about;
                 console.log(req.body, req.userId);
+                console.log(req.body);
                 _b.label = 1;
             case 1:
                 _b.trys.push([1, 3, , 4]);

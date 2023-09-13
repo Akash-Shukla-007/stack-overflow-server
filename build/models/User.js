@@ -23,7 +23,6 @@ var userSchema = new mongoose_1.default.Schema({
     },
     location: {
         type: String,
-        default: "",
     },
     tags: {
         type: [String],

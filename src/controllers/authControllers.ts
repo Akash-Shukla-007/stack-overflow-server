@@ -76,6 +76,7 @@ const getAllUsers = async (req: any, res: any) => {
       allUsers.push({
         _id: user._id,
         name: user.name,
+        location: user.location,
         about: user.about,
         tags: user.tags,
         joinedOn: user.joinedOn,
@@ -90,6 +91,7 @@ const getAllUsers = async (req: any, res: any) => {
 const editUserProfile = async (req: any, res: any) => {
   const { name, location, tags, about } = req.body;
   console.log(req.body, req.userId);
+  console.log(req.body);
 
   try {
     const data = await User.findOneAndUpdate(
