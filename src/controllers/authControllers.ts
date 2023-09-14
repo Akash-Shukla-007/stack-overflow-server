@@ -33,7 +33,7 @@ const signUp = async (req: any, res: any) => {
       Token: loginToken,
     });
   } catch (err: any) {
-    res.status(500).json({ message: err });
+    res.status(500).json({ message: err.message });
   }
 };
 
